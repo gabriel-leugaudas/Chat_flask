@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block menu %}
+    <p><a href="/">Página inicial</a></p>
+{% endblock %}
+
+{% block conteudo %}
+<h2>Nova mensagem</h2>
+
+<form>
+    <p>
+    <label for="usuario"> Usuario: <br></label>
+        <input type="text" name="usuario" id='usuario'>
+    </p>
+    <p>
+        <label for="mensagem">Mensagem: <br></label>
+        <textarea id="mensagem" name="mensagem"></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+    </p>
+</form>
+{% endblock %}
